@@ -19,7 +19,7 @@ import com.mb.common.utils.R;
 
 
 /**
- * 
+ *
  *
  * @author Qi
  * @email Qi@gmail.com
@@ -40,6 +40,13 @@ public class GrowthChangeHistoryController {
         PageUtils page = growthChangeHistoryService.queryPage(params);
 
         return R.ok().put("page", page);
+    }
+
+    @RequestMapping("/test")
+    //@RequiresPermissions("member:growthchangehistory:list")
+    public String test(){
+        System.out.println("test");
+        return null ;
     }
 
 
