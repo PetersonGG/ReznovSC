@@ -46,6 +46,7 @@ public class GrowthChangeHistoryController {
     //@RequiresPermissions("member:growthchangehistory:list")
     public String test(){
         System.out.println("test");
+        System.out.println("test1");
         return null ;
     }
 
